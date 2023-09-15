@@ -655,6 +655,19 @@ if __name__ == '__main__':
     # 运行测试
     # params = "device_platform=webapp&aid=6383&channel=channel_pc_web&aweme_id=7153585499477757192&pc_client_type=1&version_code=190500&version_name=19.5.0&cookie_enabled=true&screen_width=1344&screen_height=756&browser_language=zh-CN&browser_platform=Win32&browser_name=Firefox&browser_version=110.0&browser_online=true&engine_name=Gecko&engine_version=109.0&os_name=Windows&os_version=10&cpu_core_num=16&device_memory=&platform=PC&webid=7158288523463362079"
     # api.generate_x_bogus(params)
-    douyin_url = 'https://v.douyin.com/rLyrQxA/6.66'
+    douyin_url = 'https://v.douyin.com/iem6SjKK/'
     tiktok_url = 'https://www.tiktok.com/@evil0ctal/video/7217027383390555438'
-    asyncio.run(async_test(_douyin_url=douyin_url, _tiktok_url=tiktok_url))
+    asyncio.run(async_test(_douyin_url=douyin_url))
+
+# import asyncio
+# from douyin_tiktok_scraper.scraper import Scraper
+#
+# api = Scraper()
+#
+# async def hybrid_parsing(url: str) -> dict:
+#     # Hybrid parsing(Douyin/TikTok URL)
+#     result = await api.hybrid_parsing(url)
+#     print(f"The hybrid parsing result:\n {result}")
+#     return result
+#
+# asyncio.run(hybrid_parsing(url=input("https://v.douyin.com/iem6SjKK/")))
