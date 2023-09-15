@@ -427,7 +427,8 @@ class Scraper:
     # 自定义获取数据/Custom data acquisition
     async def hybrid_parsing(self, video_url: str) -> dict:
         # URL平台判断/Judge URL platform
-        url_platform = 'douyin' if 'douyin' in video_url else 'tiktok'
+        # url_platform = 'douyin' if 'douyin' in video_url else 'tiktok'
+        url_platform = 'douyin'
         print('当前链接平台为:{}'.format(url_platform))
         # 获取视频ID/Get video ID
         print("正在获取视频ID...")
